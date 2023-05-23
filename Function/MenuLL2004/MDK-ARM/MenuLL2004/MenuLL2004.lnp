@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"menull2004\startup_stm32f103xb.o"
+"menull2004\main.o"
+"menull2004\stm32f1xx_it.o"
+"menull2004\stm32f1xx_hal_msp.o"
+"menull2004\i2c-lcd2004.o"
+"menull2004\stm32f1xx_hal_gpio_ex.o"
+"menull2004\stm32f1xx_hal_i2c.o"
+"menull2004\stm32f1xx_hal.o"
+"menull2004\stm32f1xx_hal_rcc.o"
+"menull2004\stm32f1xx_hal_rcc_ex.o"
+"menull2004\stm32f1xx_hal_gpio.o"
+"menull2004\stm32f1xx_hal_dma.o"
+"menull2004\stm32f1xx_hal_cortex.o"
+"menull2004\stm32f1xx_hal_pwr.o"
+"menull2004\stm32f1xx_hal_flash.o"
+"menull2004\stm32f1xx_hal_flash_ex.o"
+"menull2004\stm32f1xx_hal_exti.o"
+"menull2004\stm32f1xx_hal_tim.o"
+"menull2004\stm32f1xx_hal_tim_ex.o"
+"menull2004\system_stm32f1xx.o"
+--strict --scatter "MenuLL2004\MenuLL2004.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MenuLL2004.map" -o MenuLL2004\MenuLL2004.axf

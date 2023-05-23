@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"userlib_make\startup_stm32f103xb.o"
+"userlib_make\userlib.o"
+"userlib_make\main.o"
+"userlib_make\stm32f1xx_it.o"
+"userlib_make\stm32f1xx_hal_msp.o"
+"userlib_make\stm32f1xx_hal_gpio_ex.o"
+"userlib_make\stm32f1xx_hal_i2c.o"
+"userlib_make\stm32f1xx_hal.o"
+"userlib_make\stm32f1xx_hal_rcc.o"
+"userlib_make\stm32f1xx_hal_rcc_ex.o"
+"userlib_make\stm32f1xx_hal_gpio.o"
+"userlib_make\stm32f1xx_hal_dma.o"
+"userlib_make\stm32f1xx_hal_cortex.o"
+"userlib_make\stm32f1xx_hal_pwr.o"
+"userlib_make\stm32f1xx_hal_flash.o"
+"userlib_make\stm32f1xx_hal_flash_ex.o"
+"userlib_make\stm32f1xx_hal_exti.o"
+"userlib_make\stm32f1xx_hal_tim.o"
+"userlib_make\stm32f1xx_hal_tim_ex.o"
+"userlib_make\stm32f1xx_hal_uart.o"
+"userlib_make\system_stm32f1xx.o"
+--strict --scatter "userlib_make\userlib_make.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "userlib_make.map" -o userlib_make\userlib_make.axf
